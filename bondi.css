@@ -1,0 +1,200 @@
+:root{
+    --dark-color:#19283f;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    width: 100vw;
+    text-align: center;
+}
+/* start navbar */
+.header{
+    background-color: var(--dark-color);
+}
+.navbar{
+    background-color:var(--dark-color);
+    background-color: aliceblue;
+}
+.navbar .navbar-brand{
+    color: #19283f;
+    font-weight: bold;
+    font-size: 30px;
+}
+.navbar{
+    position: sticky;
+    top: 0%;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover{
+    color: rgb(39, 188, 151);
+}
+.navbar .navbar-nav .nav-link{
+    font-size: 20px;
+}
+.header .navbar .navbar-brand{
+    transition: 2s;
+    animation: i infinite 2s 2s;
+}
+@keyframes i{
+    to{transform: scale(1.09) translateX(150px);}
+}
+.text{
+    color: aliceblue;
+    
+}
+.landing{
+    background-color: var(--dark-color);
+
+}
+.landing .text h1,
+.landing .text p{
+    transition: 4s;
+    animation:y infinite 4s 2s ;
+    overflow: hidden;
+    white-space: wrap;
+    width: 200px;
+}
+@keyframes y{
+    to{width: 0;}
+}
+.main-title h1::after p{
+    content: "";
+    position: absolute;
+    top: -30px;
+    bottom: -50px;
+
+}
+.about .count .row{
+    max-width: 100%;
+   
+}
+body{
+    scrollbar-width: none;
+}
+.skills h2{
+    font-size: 9rem;
+    color: rgb(16, 128, 226);
+}
+.skills p{
+    margin: 0%;
+    position: relative;
+    bottom: 120px;
+    z-index: 4;
+    font-size: 3rem;
+}
+.gallery h2{
+    font-size: 9rem;
+    color: rgb(16, 128, 226);
+}
+.gallery p{
+    margin: 0%;
+    position: relative;
+    bottom: 120px;
+    z-index: 4;
+    font-size: 3rem;
+}
+button{
+    background-color: aliceblue;
+    color: #19283f;
+}
+.gallery .input a.active, 
+.gallery .input button:hover{
+    color: #19283f;
+    background-color: aliceblue;
+
+}
+img{
+    max-width: 100%;
+}
+.gallery .photo{
+    width: 100%;
+}
+.quality h2{
+    font-size: 9rem;
+    color: rgb(16, 128, 226);
+}
+.quality p{
+    margin: 0%;
+    position: relative;
+    bottom: 120px;
+    z-index: 4;
+    font-size: 3rem;
+}
+.quality .overlly{
+   width: 100%;
+   position: relative;
+}
+.quality .overlly .riht::before{
+    content: "";
+    position: relative;
+    border-left: 4px solid rgb(42, 123, 195);
+    height: 100px;
+    left: -22%;
+    top: 30%;
+   height: 100%;
+    /* transform: translatey(-50%); */
+}
+.quality .overlly .left::before{
+    content: "";
+    position: relative;
+    border-left: 4px solid rgb(42, 123, 195);
+    height: 100px;
+    left: -10%;
+    top: 30%;
+   height: 100%;
+    /* transform: translatey(-50%); */
+}
+
+.quality .overlly .span{
+width: 100px;
+}
+.contact h2{
+    font-size: 9rem;
+    color: rgb(16, 128, 226);
+}
+.contact p{
+    margin: 0%;
+    position: relative;
+    bottom: 120px;
+    z-index: 4;
+    font-size: 3rem;
+}
+.contact .form{
+    width: 500px;
+    background-color: #19283f;
+    margin: auto;
+    padding: 12px;
+}
+.foot{
+    background-color: var(--dark-color);
+    color: aliceblue;
+    border-radius: 50% 50% 0 0;
+    height: 50px;
+    opacity: 0.7;
+}
+.about h2{
+    font-size: 9rem;
+    color: rgb(16, 128, 226);
+}
+.about p{
+    margin: 0%;
+    position: relative;
+    bottom: 120px;
+    z-index: 4;
+    font-size: 3rem;
+}
+.about{
+    width: 100%;
+}
+@media(max-width:767px){
+    .header{
+    flex-direction: columns;
+}}
+@media(max-width:767px){
+    .contianer{
+        width: 100%;
+    }
+}
+/* end navbar */
